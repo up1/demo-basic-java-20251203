@@ -4,9 +4,17 @@ import java.math.BigDecimal;
 
 public class DemoFloating {
 
+    static final int ZERO = 0;
+
     public static void main(String[] args) {
+        System.out.println(DemoFloating.ZERO);
         solution3();
     }
+
+    void xxx(){
+        System.out.println(DemoFloating.ZERO);
+    }
+
 
     // Floating point errors
     static void problem01() {
