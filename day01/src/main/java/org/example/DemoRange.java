@@ -3,18 +3,23 @@ package org.example;
 public class DemoRange {
 
     public String get(String input){
-        int start = Integer.parseInt(input.charAt(1) + "");
-        int end;
+        int start = getAnInt(input, 1) + 1;
+        if(input.startsWith("[")) {
+            start = getAnInt(input, 1);
+        }
+        int end = getAnInt(input, 3) - 1;
         if(input.endsWith("]")) {
-            end = Integer.parseInt(input.charAt(3) + "");
-        } else {
-            end = Integer.parseInt(input.charAt(3) + "") - 1;
+            end = getAnInt(input, 3);
         }
-        StringBuilder result = new StringBuilder();
+        String result = "";
         for (int i = start; i <= end ; i++) {
-            result.append(i);
+            result = result + i;
         }
-        return result.toString();
+        return result;
+    }
+
+    private static int getAnInt(String input, int index) {
+        return Integer.parseInt(input.charAt(index) + "");
     }
 
 }
