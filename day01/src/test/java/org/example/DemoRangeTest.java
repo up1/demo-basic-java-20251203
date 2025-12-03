@@ -8,6 +8,14 @@ import static org.junit.jupiter.api.Assertions.*;
 class DemoRangeTest {
 
     @Test
+    @DisplayName("ตัวอย่าง test case นะ 04")
+    void case04() {
+        DemoRange demoRange = new DemoRange();
+        String result = demoRange.get("(1,5)");
+        assertEquals("234", result);
+    }
+
+    @Test
     @DisplayName("ตัวอย่าง test case นะ 03")
     void case03() {
         DemoRange demoRange = new DemoRange();
