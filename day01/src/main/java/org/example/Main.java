@@ -7,7 +7,7 @@ public class Main {
     private String first_name;
     private String fname;
 
-    static void main(String[] args) {
+    public static void main(String[] args) {
         // Method variable or local variable
         int i = 0;
         System.out.println("Hello Java");
