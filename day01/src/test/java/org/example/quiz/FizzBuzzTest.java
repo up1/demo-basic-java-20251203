@@ -15,5 +15,6 @@ class FizzBuzzTest {
         assertEquals("FizzBuzz", fb.say(15));
         assertEquals("Buzz", fb.say(5));
         assertEquals("Buzz", fb.say(10));
+        assertEquals("SCB", fb.say(7));
     }
 }
