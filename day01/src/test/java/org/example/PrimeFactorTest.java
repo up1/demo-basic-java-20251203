@@ -10,6 +10,27 @@ import static org.junit.jupiter.api.Assertions.*;
 class PrimeFactorTest {
 
     @Test
+    void case07() {
+        PrimeFactor p = new PrimeFactor();
+        List<Integer> result = p.find(6);
+        assertEquals(list(2,3), result);
+    }
+
+    @Test
+    void case06() {
+        PrimeFactor p = new PrimeFactor();
+        List<Integer> result = p.find(27);
+        assertEquals(list(3,3,3), result);
+    }
+
+    @Test
+    void case05() {
+        PrimeFactor p = new PrimeFactor();
+        List<Integer> result = p.find(9);
+        assertEquals(list(3,3), result);
+    }
+
+    @Test
     void case04() {
         PrimeFactor p = new PrimeFactor();
         List<Integer> result = p.find(3);
