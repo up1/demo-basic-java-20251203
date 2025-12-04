@@ -1,0 +1,26 @@
+package org.example;
+
+import org.junit.jupiter.api.Test;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class PrimeFactorTest {
+
+    @Test
+    void case01() {
+        PrimeFactor p = new PrimeFactor();
+        List<Integer> result = p.find(2);
+        assertEquals(list(2), result);
+    }
+
+    private List<Integer> list(int... inputs){
+        List<Integer> result = new ArrayList<>();
+        for (int input : inputs) {
+            result.add(input);
+        }
+        return result;
+    }
+}
