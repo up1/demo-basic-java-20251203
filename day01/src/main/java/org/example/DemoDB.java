@@ -16,7 +16,9 @@ public class DemoDB {
             rs.close();
             prepStmt.close();
             conn.close();
-        } catch (Exception e) {
+        } catch (Exception ignored) {
+            // Alert, Exception tracking
+            // Logging
         } finally {
             if(rs != null){
                 try {
@@ -27,7 +29,7 @@ public class DemoDB {
             if(prepStmt != null){
                 try {
                     prepStmt.close();
-                } catch (SQLException e) {
+                } catch (SQLException ignored) {
                 }
             }
         }
